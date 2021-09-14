@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>  
+    <link rel="stylesheet" href="style.css">
+<name>
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon" />
+    
+    <title>Galatasaray</title>
+</name>
+<header>
+    <p class="geri">Bir Sonraki Maça Kalan Süre </p>
+    <p id="sayim"></p>
+    <div align="margin-top"><script language="Javascript" src="http://sa.sayaclar.com/c/s4.php?a=wwwh5h0&s=1a3"></script></div>
+    <script>
+        // Geri Sayım Tarihini Belirliyoruz //
+        var gerisayim = new Date("September 16 ,2021,20:12:20").getTime()
+        // Saniye Başına Güncelleme
+        var x = setInterval(function(){
+            // şu anki tarih    
+        var  simdikizaman = new Date().getTime();
+        // 2 tarih arasındaki zaman farkı :)
+        var uzaklik = gerisayim - simdikizaman;
+        // az bişe hesap kaldı mutlu son yakın 
+        var gunler = Math.floor(uzaklik / (1000*60*60*24));
+        var saatler = Math.floor((uzaklik % (1000*60*60*24))/(1000*60*60));
+        var dakikalar = Math.floor((uzaklik % (1000*60*60)) / (1000*60));
+        var saniyeler = Math.floor(uzaklik % (1000*60) / 1000);
+        // Çağırma İşlemi 
+        document.getElementById("sayim").innerHTML = gunler + "g" + saatler + "s" + dakikalar + "d" + saniyeler + "s";
+
+
+
+
+
+
+        },1000);
+   </script>
+<div class="bas">
+    <h1>GALATASARAY</h1>
+    <p id="demo"></p>
+</div>
+
+</header>
+<nav class="navigation">
+    <a class="extension" href="https://www.galatasaray.org/sl/kupalar/31">Kazandılan Kupalar</a>
+    <a class="extension" href="https://www.galatasaray.org">Galatasaray Web Sitesi</a>
+    <a class="extension" href="https://www.galatasaray.org/pl/futbol-takim-kadrosu/9">Klüp Oyuncuları</a>
+    <a class="extension" href="https://www.gsstore.org">Gs Store</a>
+    <a class="extension" href="https://www.galatasaray.org/p/fatih-terim/1143">Efsanemiz Sayın Fatih Terim</a>
+
+</nav>
+<section>
+    <div class="nav">
+    <a class="fixture" href="https://www.galatasaray.org/s/super-lig-2021-2022-sezonu-fiksturumuz/197">Spor Toto Süper Lig 2021-2022 Sezonu Fiksturumuz</a>
+</div> 
+</section>
+<footer>
+<p>Tüm Hakları Emirhan Polata Aittir©</p>
+</footer>
+</body>
+</html>

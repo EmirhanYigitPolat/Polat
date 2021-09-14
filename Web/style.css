@@ -1,0 +1,49 @@
+.bas{
+    color: yellow;
+    padding: 1px;
+    font-size: 25px;
+    text-align: center;
+}
+.navigation{
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    color: red;
+
+}
+.extension{
+    text-decoration-line: none;
+    color: red;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 23px;
+}
+.fixture{
+    text-decoration-line: none;
+    color: yellow;
+    font-size: 30px;
+    padding: 150px;
+    text-align: center;
+    background-position: 0%;
+    background-size: 136%;
+        }
+        .nav{
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-align: center;
+            padding: 175px;
+            
+            }
+            p{
+                font-size: 25px;
+                font-weight: 50;
+                color: white;
+                text-align: center;
+                }
+               body{
+        background-image: url("img/d5f9uie-988e9245-7074-4c4b-80d2-4ca8e76c761f.jpg");
+        background-size: 110%;
+        padding: 0;
+        margin: 0;
+        background-repeat: no-repeat;
+    } 
